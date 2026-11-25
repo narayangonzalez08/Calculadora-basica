@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(58, 71, 100);
+  font-family: system-ui, -apple-system, sans-serif;
+  margin: 0;
+  padding: 24px 16px;
+}
+
+
+.calculadora,
+#pantalla,
+.botones {
+  width: 100%;
+  max-width: 340px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#pantalla {
+  display: block;
+  text-align: right;
+  background-color: rgb(24, 32, 52);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 20px 18px;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.botones {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  background-color: rgb(35, 44, 67);
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.botones button {
+  color: darkslategray;
+  background-color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  height: 48px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.3);
+  transition: transform 0.15s ease, background-color 0.15s ease;
+}
+
+.botones button:hover {
+  transform: translateY(-2px);
+}
+
+.botones button:active {
+  transform: translateY(1px);
+  background-color: lightgray;
+}
+
+#red {
+  background-color: orangered;
+  color: white;
+}
+
+#red:active {
+  background-color: rgb(128, 34, 0);
+}
